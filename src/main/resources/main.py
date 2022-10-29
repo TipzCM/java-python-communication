@@ -1,7 +1,7 @@
 #! python 3
 import sys
 
-ScriptPath = sys.argv[0] if len(sys.argv) > 0 else "D:\\development\\dawn\\java-prog\\script-runner\\src\\main\\resources"
+ScriptPath = sys.argv[0] if len(sys.argv) > 0 else ""
 FileName = sys.argv[1] if len(sys.argv) > 1 else "MyNew.csv"
 OutName = sys.argv[2] if len(sys.argv) > 2 else "out.csv"
 
