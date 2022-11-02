@@ -72,18 +72,31 @@ public class App {
 
         setProperties();
 
-        Runner runner = new Runner();
+        // TODO basic writer
+//        BasicFileWriter writer = new BasicFileWriter();
+//        writer.writeCSVFile();
 
-        int exitCode = -1;
-        try {
-            exitCode = runner.runScript(
-                    PYTHON_PATH,
-                    SCRIPT_PATH + SCRIPT_NAME
-            );
-        } catch (Exception ex) {
-            System.out.println(ex.getMessage());
-        }
+        //TODO writing excel file
+        WorkbookWriter writer = new WorkbookWriter();
+        writer.writeWorkbookCSV();
 
-        System.out.println("Completed: " + exitCode);
+
+        // TODO - writing CSV
+//        CSVCreatorService svc = new CSVCreatorService();
+//        svc.writeCSV();
+
+        // TODO - running script
+//        Runner runner = new Runner();
+//
+//        int exitCode = -1;
+//        try {
+//            exitCode = runner.runScript(
+//                    PYTHON_PATH,
+//                    SCRIPT_PATH + SCRIPT_NAME
+//            );
+//        } catch (Exception ex) {
+//            System.out.println(ex.getMessage());
+//        }
+//        System.out.println("Completed: " + exitCode);
     }
 }
